@@ -2,13 +2,16 @@
 
 <div class="text-center">
   <h1 class="p-3 mb-2 bg-secondary text-white">Make Entry</h1>
+  <!--Bootstrap styling-->
   <div class="container">
     <form action="/" method="POST">
       {{ form.csrf }}
+      <!--This is to do with the SECRET_KEY-->
       <p>
         <label for="name"><strong> Enter your full name</strong></label
         ><br />
         {{ form.name(size=32, placeholder='John Doe') }}
+        <!--This links the name field of the form from the app-->
       </p>
       <input type="submit" value="submit" class="btn btn-primary" />
     </form>

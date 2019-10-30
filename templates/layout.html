@@ -1,3 +1,5 @@
+<!--This page is used to define the layout used by all html files included in this app, 
+  this saves time and make the code of templates alot cleaner-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +9,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- I used bootstrap here for the styling of the html. Tried to used a static css file before 
+      however this did not work -->
   </head>
   <body>
     {% block body %}{% endblock %}
